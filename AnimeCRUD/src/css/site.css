@@ -1,0 +1,76 @@
+﻿
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	transition: background-color 5000s ease-in-out 0s;
+	-webkit-text-fill-color: white !important;
+}
+
+input {
+	color: white !important;
+}
+
+.card {
+	margin: 20px;
+}
+
+#news {
+	list-style: none;
+}
+
+a {
+	color: #d9534f !important;
+}
+
+	a:hover {
+		color: #d68986;
+	}
+
+h3, h5 {
+	color: #d9534f !important;
+}
+
+.loader {
+	border: 3px solid rgba(24,28,33,0.9);
+	border-top: 3px solid #d9534f;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.anime-image {
+	opacity: 1;
+	backface-visibility: hidden;
+	transition: .5s ease;
+}
+
+.anime-image-overlay {
+	opacity: 0;
+	transition: .5s ease;
+	position: absolute;
+}
+
+.anime-card:hover .anime-image {
+	opacity: .3;
+}
+
+.anime-card:hover .anime-image-overlay {
+	opacity: 1;
+}
+
+.anime-image-overlay p::-webkit-scrollbar {
+	width: 0px; /* remove scrollbar space */
+	background: transparent; /* optional: just make scrollbar invisible */
+}

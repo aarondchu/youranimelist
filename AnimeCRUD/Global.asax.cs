@@ -8,7 +8,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.Http;
 
-namespace AnimeCRUD
+namespace ProjectCRUD
 {
     public class Global : HttpApplication
     {
@@ -16,8 +16,9 @@ namespace AnimeCRUD
         {
             // Code that runs on application startup
             AreaRegistration.RegisterAllAreas();
+            UnityConfig.RegisterComponents();
             GlobalConfiguration.Configure(WebApiConfig.Register);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);            
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
     }
 }
